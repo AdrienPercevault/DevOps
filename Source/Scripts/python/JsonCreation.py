@@ -4,20 +4,20 @@ from datetime import datetime
 
 
 # Declaration of the unit number
-unit_number: int = 1
+unit_number = 1
 # Declaration of the number of Automate to create
-number_automate: int = 10
+number_automate = 10
 # Declaration of a table of with all the automates
 table_automates = {}
 # Declaration of the type of the automate
-type_automate: str = ""
+type_automate = ""
 
 # Generation of all the automate for production unity
 for i in range(0, number_automate):
 
     # Set the type of automate for all the automate
     number = str(i)
-    type_automate: str = "0X0000BA2" + number
+    type_automate = "0X0000BA2" + number
 
     # Create one automate with random values for each parameters
     table_automates[i] = {
